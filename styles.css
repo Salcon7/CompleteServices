@@ -1,0 +1,529 @@
+/* General Styles */
+body {
+    font-family: 'Marcellus', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4eed6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    background-color: #f4eed6;
+    color: black;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Marcellus', serif;
+}
+
+/* Logo Styling */
+header img {
+    height: 150px; /* Adjust the logo size as needed */
+    margin-right: 10px; /* Adds spacing between the logo and title */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    display: inline-block; /* Makes the link behave like a button */
+    background-color: #002b5c; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Removes underline */
+    padding: 10px 20px; /* Adds padding for button-like appearance */
+    border-radius: 50px; /* Circular edges for buttons */
+    font-family: 'League Spartan', sans-serif; /* Sets font style */
+    font-size: 16px; /* Adjusts font size */
+    margin: 0 5px; /* Adds spacing between buttons */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Ensures the cursor changes to pointer on hover */
+}
+
+.nav-button:hover {
+    background-color: #004080; /* Changes background color on hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex; /* Enables Flexbox */
+    height: 400px;
+    background: url('background video.mp4') no-repeat center center/cover;
+    justify-content: space-between; /* Space between the text and image */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 100px;
+    overflow: hidden;
+}
+
+/* Hero Video */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    z-index: -1; /* Places the video behind other content */
+    opacity: 0.8; /* Adjust opacity for subtle blending with the overlay */
+}
+
+/* Overlay Effect */
+/* .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Sits between the video and the text */
+
+/* Hero Text */
+.hero-text {
+    flex: 1; /* Allows the text area to take up available space */
+    margin-right: 0px; /* Adds space between text and image */
+    margin-left: 0px;
+    justify-content: center;
+    position: absolute;
+
+}
+
+
+
+.hero-text h2 {
+    font-size: 70px;
+    font-weight: bolder;
+    color: #ffff;
+    font-family: 'Marcellus', serif;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.hero-text p {
+    font-size: 35px;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+.explore-button {
+    background-color: #002b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px; /* Circular edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Ensures it occupies its own line */
+    margin: 10px auto; /* Centers the button horizontally and adds space */
+    text-align: center; /* Centers the text inside the button */
+}
+
+/* Chat Section */
+.chat-section {
+    text-align: center;
+    padding: 20px;}
+
+/* Chat Button */
+.chat-button {
+    background-color: #002b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+    margin-right: 20px;
+}
+
+.chat-button:hover {
+    background-color: #004080; /* Slightly lighter shade on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-block: 40px;
+}
+
+footer img {
+    height: 150px; /* Adjust the logo size as needed */
+    margin-right: 10px; /* Adds spacing between the logo and title */
+}
+
+footer a {
+    color: white; /* Keeps links consistent with the footer text color */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    background-color: #f4eed6;
+    padding: 50px 20px;
+}
+
+#services h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    color: #002b5c;
+    font-family: 'Marcellus', serif;
+}
+
+/* Styling for Individual Service Containers */
+.service {
+    display: flex; /* Enables horizontal alignment */
+    justify-content: space-between; /* Space between image and text container */
+    align-items: center; /* Vertically aligns content */
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #ffffff;
+    padding: 70px;
+    max-width: 1700px;
+    margin: -5 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Images */
+.service img {
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text Container Styling */
+.service-content {
+    display: flex;
+    flex-direction: column; /* Arranges h3, p, and button vertically */
+    align-items: center; /* Centers all text */
+}
+
+/* Styling for Text */
+.service h3 {
+    font-size: 64px;
+    color: #002b5c;
+    margin-bottom: 10px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.service p {
+    font-size: 22px;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center; /* Centers text */
+}
+
+/* Button Styling */
+.book-button {
+    background-color: #002b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px; /* Circular edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centers button text */
+}
+
+.book-button:hover {
+    background-color: #004080; /* Hover effect */
+}
+
+/* Alternating Layouts */
+.service:nth-child(odd) {
+    flex-direction: row; /* Image on the left, content on the right for odd items */
+}
+
+.service:nth-child(even) {
+    flex-direction: row-reverse; /* Image on the right, content on the left for even items */
+}
+
+/* Responsiveness for Smaller Screens */
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers content */
+    }
+
+    .service img {
+        margin-bottom: 10px; /* Adds spacing below the image */
+    }
+
+    .service-content {
+        align-items: center; /* Ensures text remains centered */
+    }
+
+    .book-button {
+        margin: 10px auto; /* Centers button horizontally */
+    }
+}
+
+/* Modal Background */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999;
+    backdrop-filter: blur(5px); /* Applies blur effect */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #002b5c;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.modal-content .calendar {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.modal-content .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content .booking-form label {
+    font-size: 14px;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.modal-content .booking-form input,
+.modal-content .booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #002b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #004080;
+}
+
+/* Close Button */
+.close-button {
+    margin-top: 20px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #b71c1c;
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px); /* Start slightly below */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* Slide back to original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0); /* Original position */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: translateY(-50px); /* Slide slightly above */
+        opacity: 0; /* Fade out */
+    }
+}
+
+/* Default State for Service Cards */
+.service {
+    opacity: 1; /* Always visible */
+    transform: translateY(0); /* Default position */
+    transition: transform 0.8s ease, opacity 0.8s ease; /* Smooth transition for animations */
+}
+
+/* Animate In */
+.service.in-view {
+    animation: slideIn 0.8s ease forwards;
+}
+
+/* Animate Out */
+.service.out-of-view {
+    animation: slideOut 0.8s ease forwards;
+}
+
+/* About Us */
+.about {
+    text-align: center;
+    background-color: #f4eed6;
+    padding: 50px 100px;
+}
+
+.owners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.owners img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.owners h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #002b5c;
+}
+
+.owners p {
+    font-size: 22px;
+    font-family: 'League Spartan', sans-serif;
+}
+.intro, .vision-mission, .values {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+
+.intro h1, .vision-mission h2, .values h2 {
+    font-size: 36px;
+    color: #002b5c;
+    font-family: 'Marcellus', serif;
+}
+
+.intro p, .vision-mission p, .values p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.services-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-summary li {
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'League Spartan', sans-serif;
+}
+.expertise-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures cards wrap neatly */
+    justify-content: center;
+    gap: 20px; /* Adds space between cards */
+    padding: 20px;
+}
+
+.expertise-card {
+    width: 300px; /* Adjust as needed */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.expertise-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures images fit well */
+    border-radius: 10px;
+}
+
+.expertise-card h3 {
+    font-size: 22px;
+    color: #002b5c;
+    margin: 10px 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.expertise-card p {
+    font-size: 16px;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.expertise h2 {
+    font-size: 36px;
+    color: #002b5c;
+    font-family: 'Marcellus', serif;
+    text-align: center;
+}

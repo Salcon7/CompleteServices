@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do - Complete Services Ltd.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Construction site">
+        <h1>Complete Services Ltd.</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <button class="nav-button" onclick="window.location.href='about.html'">About Us</button>
+                <button class="nav-button" onclick="window.location.href='services.html'">What We Do</button>
+                <li><a href="#contact" class="nav-button">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="consultancy.jpg" alt="Expert Consultation">
+            <div class="service-content">
+                <h3>Expert Consultation</h3>
+                <p>We offer expert construction consultation to guide clients through every phase of their building projects. From initial planning and budgeting to regulatory compliance and material selection, our team provides practical insights and professional advice to ensure successful project outcomes. We’re here to help you make informed decisions with confidence.</p>
+                <a href="#booking-modal" class="book-button">Book Now</a>
+            </div>
+        </div>
+        <div class="service">
+            <img src="construction.jpg" alt="Full Construction Services">
+            <div class="service-content">
+                <h3>Full Construction Services</h3>
+                <p>From blueprint to build, we turn ideas into enduring structures with precision, passion, and professionalism. Whether it's a dream home or a commercial hub, we construct with purpose and deliver with pride.</p>
+                <a href="#booking-modal" class="book-button">Book Now</a>
+            </div>
+        </div>
+        <div class="service">
+            <img src="design.jpeg" alt="Building Design">
+            <div class="service-content">
+                <h3>Building Design</h3>
+                <p>Complete Services is a trusted design firm specializing in innovative and functional construction design solutions. We provide tailored architectural and structural design services for residential, commercial, and industrial projects. With a focus on quality, efficiency, and client satisfaction, Complete Services turns your vision into well-crafted, buildable plans.</p>
+                <a href="#booking-modal" class="book-button">Book Now</a>
+            </div>
+        </div>
+        <div class="service">
+            <img src="supplies.jpeg" alt="Construction Supplies">
+            <div class="service-content">
+                <h3>Construction Supplies</h3>
+                <p>Building made easy—your trusted source for quality construction materials delivered on time, every time. From foundation to finish, we supply the strength behind every structure.</p>
+                <a href="#booking-modal" class="book-button">Book Now</a>
+            </div>
+        </div>
+        <div class="service">
+            <img src="maintenance.jpg" alt="Property Management and Maintenance">
+            <div class="service-content">
+                <h3>Property Management and Maintenance</h3>
+                <p>We take the hassle out of property ownership with reliable management and proactive maintenance, keeping your spaces running smoothly, efficiently, and always in top shape.</p>
+                <a href="#booking-modal" class="book-button">Book Now</a>
+            </div>
+        </div>
+        <div class="service">
+            <img src="MEP.jpg" alt="MEP Services">
+            <div class="service-content">
+                <h3>MEP Services</h3>
+                <p>Powering performance from the inside out—our MEP services ensure seamless integration of mechanical, electrical, and plumbing systems for safe, efficient, and sustainable buildings.</p>
+                <a href="#booking-modal" class="book-button">Book Now</a>
+            </div>
+        </div>
+        <!-- Booking Modal -->
+<div id="booking-modal" class="modal">
+    <div class="modal-content">
+        <h2>Schedule an Appointment</h2>
+        <div class="calendar">
+            <!-- Replace this with an actual calendar if needed -->
+            <p>Calendar Placeholder</p>
+        </div>
+        <form class="booking-form">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="details">Additional Details:</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+            <button type="submit" class="submit-button">Confirm Booking</button>
+        </form>
+        <button class="close-button">Close</button>
+    </div>
+</div>
+    </section>
+    
+    
+    <section class="chat-section">
+        <button class="chat-button">Let's Chat</button>
+    </section>
+
+    <footer id="contact">
+        <img src="logo.png" alt="Construction site">
+        <div>
+            <a href="mailto:Completeservicesltd75@gmail.com">Completeservicesltd75@gmail.com</a><br>
+            <a href="tel:+250784542934">+250784542934</a><br>
+            Remera, Kigali, Rwanda
+        </div>
+        <p>&copy; 2025 Complete Services Ltd.</p>
+    </footer>   
+    <script src="script.js"></script> 
+</body>
+</html>
